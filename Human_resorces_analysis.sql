@@ -193,7 +193,7 @@ WHERE birthdate BETWEEN '1996-01-01' AND '2010-12-31';
 SELECT * FROM human_resources
 WHERE YEAR(birthdate) BETWEEN 1996 AND 2010;
 
-SELECT * FROM human_resources;
+
 
 --  23 write a query to find distubution of employees state wise 
 SELECT location_state, COUNT(emp_id) AS num_employees
@@ -210,7 +210,7 @@ GROUP BY location_city
 ORDER BY num_employees DESC
 LIMIT 10;
 
--- write a query to find employees higher between 2001 and 2010
+-- 25 write a query to find employees higher between 2001 and 2010
 SELECT Count(*) AS employees_hired_between2001_2010 FROM human_resources
 WHERE YEAR(hire_date) BETWEEN 2001 AND 2010;
 
